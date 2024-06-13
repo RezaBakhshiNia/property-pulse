@@ -1,15 +1,19 @@
-import '@/assets/styles/globals.css';
+import Head from "next/head";
+import "@/assets/styles/globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
-  title: 'Property Pulse | Find The Perfect Rental',
-  description: 'Find your dream rental property',
-  keywords: 'rental, find rentals, find properties',
-}
+  title: "خونمون | خونه جدید با خونمون",
+  description: "با خونمون، خونه بهتری اجاره کنید",
+  keywords: "اجاره، رهن، پیدا کردن خونه",
+};
+
 const MainLayout = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body id="body">
-        <div className="root">{children}</div>
+        <Navbar />
+        <main className="root">{children}</main>
       </body>
     </html>
   );
