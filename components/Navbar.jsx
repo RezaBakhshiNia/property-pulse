@@ -95,7 +95,7 @@ const Navbar = () => {
           )}
 
           {/* <!-- Right Side Menu (Logged In) --> */}
-          <div className="absolute inset-y-0 right-0 flex items-center md:gap-2 pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
+          <div className="absolute inset-y-0 right-0 flex items-center gap-2 pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
             <Link href="/messages" className="relative group">
               <button
                 type="button"
@@ -122,7 +122,7 @@ const Navbar = () => {
               </span>
             </Link>
             {/* <!-- Profile dropdown button --> */}
-            <div className="relative ml-3">
+            <div className="relative pb-1">
               <div>
                 <button
                   type="button"
